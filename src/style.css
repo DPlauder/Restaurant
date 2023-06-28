@@ -19,7 +19,9 @@ body {
 }
 .kopf h1 {
     color: white;
+    font-size: 4em;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 .nav_bar {
     height: 50px;
