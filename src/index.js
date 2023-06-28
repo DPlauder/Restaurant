@@ -5,10 +5,10 @@ import './style.css';
 import {createHeader} from '../modules/header'; 
 import {createNav} from '../modules/nav';
 import {createContainer} from '../modules/container'; 
-import {createFooter} from '../modules/footer'; 
-import {createMenu, showMenu} from '../modules/menu'; 
-import {createHome, showHome} from '../modules/home'; 
-import {createRes,showRes} from '../modules/reservation'; 
+import {createFooter} from '../modules/footer';
+import {createHome, highlightHome, showTextHome} from '../modules/home';
+import {createMenu, highlightMenu, showTextMenu} from '../modules/menu'; 
+import {createRes,highlightRes, showTextRes} from '../modules/reservation'; 
 
 createHeader();
 createNav();
@@ -22,11 +22,14 @@ const btnClick = document.getElementById('nav_bar');
 btnClick.addEventListener('click', (e) => {
     let targetElement = e.target;
     if (targetElement.innerHTML === 'HOME'){
-        showHome();
+        highlightHome();
+        showTextHome();
     } else if(targetElement.innerHTML === 'MENU'){
-        showMenu();
+        highlightMenu();
+        showTextMenu();
     } else if(targetElement.innerHTML === 'RESERVATION'){
-        showRes();
+        highlightRes();
+        showTextRes();
     }    
 })
 

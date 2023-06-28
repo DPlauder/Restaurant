@@ -7,7 +7,7 @@ body {
     border: 5px solid rgb(65, 64, 64);
 }
 
-*/----------------------------------------kopf--------------------------------------------------------------------------*/
+
 .kopf {
     height: 100px;
     width: 70vw;
@@ -25,9 +25,8 @@ body {
     font-weight: bold;
     letter-spacing: 5px;
 }
-*/----------------------------------------navigation--------------------------------------------------------------------------*/
 .nav_bar {
-    height: 50px;
+    height: 70px;
     width: 70vw;
     border: 5px solid rgb(65, 64, 64);
     margin-left: auto;
@@ -68,7 +67,7 @@ body {
     animation: bigger 0.2s forwards ;
 }
 .container {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 180px);
     width: 70vw;
     border-left: 5px solid rgb(65, 64, 64);
     border-right: 5px solid rgb(65, 64, 64);
@@ -83,14 +82,19 @@ body {
     height: 100%;
     font-size: 140%;
 }
-*/----------------------------------------anzeige wechsel--------------------------------------------------------------------------*/
 .pick_one {
+    background-color: rgb(169, 169, 252);
     display: block;
 }
 .pick_two {
+    background-color: rgb(252, 137, 137);
     display: block;
 }
 .pick_three {
+    display: block;
+    background-color: rgb(104, 141, 104);
+}
+.showElement {
     display: block;
 }
 .container h2 {
