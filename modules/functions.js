@@ -1,13 +1,29 @@
 'use strict';
 
-function createTags(parent, childs, createParent = false){
-    for(let item of childs){        
-        if (createParent === false){            
-            document.getElementById('content').appendChild(document.createElement(parent));
+class HtmlTag{
+    constructor(tagName, parent, className, id, text){
+        this.tagName = tagName;
+        this.parent = parent;
+        this.className = className;
+        this.id = id;
+        this.text = text;
+    }
+    createHtmlElement(){
+        const element = document.createElement(this.tagName);
+        const par = document.getElementById(this.parent);
+        par.appendChild(element);        
+        if(this.className){
+            for (let item of this.className){
+                element.classList.add(item);
+            }
         }
-        document.querySelector(parent).appendChild(document.createElement(item));          
+        if (this.id){
+            element.id = this.id;
+        }
+        if (this.text){
+            element.textContent = this.text;
+        }
     }
 }
 
-
-export {createTags};
+export {HtmlTag};

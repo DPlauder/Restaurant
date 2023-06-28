@@ -8,19 +8,23 @@
     text-align: center;
 }
 .nav_bar {
-    height: 30px;
-    border-bottom: 5px solid grey;
+    height: 60px;
 }
 
 .nav_list{
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    padding: 0;
 }
-.nav_list li{
-    margin-left: 5px;
-    margin-right: 5px;
+.btn{
+    display: none;
+    width: 100%;
+    border-style: none;
+    font-size: 1.2em;
 }
+
 .container {
     margin-top: 50px;
     width: 60%;
