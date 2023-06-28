@@ -19,19 +19,39 @@
     padding: 0;
 }
 .btn{
-    display: none;
     width: 100%;
     border-style: none;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 .container {
-    margin-top: 50px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    height: calc(100vh - 110px);
     text-align: center;
 }
+.tabcontent {
+    display: none;
+    font-size: 140%;
+}
+.pick_one {
+    display: block;
+    background-color: blue;
+    color: white;
+}
+.pick_two {
+    background-color: rgb(223, 2, 2);
+    color: white;
+    display: block;
+}
+.pick_three {
+    background-color: green;
+    color: white;
+    display: block;
+}
 .container h2 {
+    padding-top: 60px;
     margin-bottom: 20px;
+}
+.container p {
+    padding-bottom: 30px;
 }
