@@ -21,7 +21,6 @@ createRes()
 const btnClick = document.getElementById('nav_bar');
 btnClick.addEventListener('click', (e) => {
     let targetElement = e.target;
-    console.log(targetElement);
     if (targetElement.innerHTML === 'HOME'){
         showHome();
     } else if(targetElement.innerHTML === 'MENU'){

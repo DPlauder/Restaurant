@@ -5,7 +5,7 @@ import {HtmlTag} from '../modules/functions';
 const createMenu = () => {
     let menu = new HtmlTag('div', 'container', ['tabcontent'], 'menu');
     menu.createHtmlElement();
-    let ue3 = new HtmlTag('h2', 'menu','','','Menu')
+    let ue3 = new HtmlTag('h2', 'menu','','','MENU')
     ue3.createHtmlElement();
     let p2 = new HtmlTag('p', 'menu','','','Good food here')
     p2.createHtmlElement();

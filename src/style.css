@@ -1,14 +1,33 @@
 * {
     box-sizing: border-box;
     margin: 0;
+
+}
+body {
+    border: 5px solid rgb(65, 64, 64);
 }
 .kopf {
-    height: 50px;
-
+    height: 100px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(65, 64, 64) ;
+    display: grid;
     text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+.kopf h1 {
+    color: white;
+    font-weight: bold;
 }
 .nav_bar {
-    height: 60px;
+    height: 50px;
+    width: 70vw;
+    border: 5px solid rgb(65, 64, 64);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(65, 64, 64);
 }
 
 .nav_list{
@@ -17,35 +36,55 @@
     justify-content: space-evenly;
     list-style: none;
     padding: 0;
+    column-gap: 5px;
 }
 .btn{
     width: 100%;
     border-style: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
     cursor: pointer;
+    font-weight:bolder;
+    background-color: white;
 }
-
+.btn_one:hover{
+    background-color: rgb(169, 169, 252);
+    color: white;
+}
+.btn_two:hover{
+    background-color: rgb(252, 137, 137);
+    color: white;
+}
+.btn_three:hover{
+    background-color: rgb(104, 141, 104);
+    color: white;
+}
+.btn:hover{
+    animation: bigger 0.2s forwards ;
+}
 .container {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 160px);
+    width: 70vw;
+    border-left: 5px solid rgb(65, 64, 64);
+    border-right: 5px solid rgb(65, 64, 64);
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .tabcontent {
     display: none;
+    height: 100%;
     font-size: 140%;
 }
 .pick_one {
     display: block;
-    background-color: blue;
-    color: white;
 }
 .pick_two {
-    background-color: rgb(223, 2, 2);
-    color: white;
     display: block;
 }
 .pick_three {
-    background-color: green;
-    color: white;
     display: block;
 }
 .container h2 {
@@ -54,4 +93,24 @@
 }
 .container p {
     padding-bottom: 30px;
+    
 }
+
+body {
+    --s: 100px; /* control the size */
+    
+    --_g: #0000 83%,#b09f79 85% 99%,#0000 101%;
+    background:
+      radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+      radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+      radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+      radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+      #476074;
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+  }
+
+@keyframes bigger {
+    0% {font-size: 1.5em;}
+    100%{font-size:1.6em;}
+}
+  
