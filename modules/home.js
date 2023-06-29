@@ -2,6 +2,8 @@
 
 import {HtmlTag} from '../modules/functions';
 
+
+/*---------------'tagname', 'parentname', array['klassennamen'], 'idnamen', 'textinhalte'----------------------------------------------------------------------*/
 const createHome = () => {
     let home = new HtmlTag('div', 'container', ['tabcontent', 'showElement'], 'home');
     home.createHtmlElement();
