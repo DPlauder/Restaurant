@@ -3,7 +3,7 @@
 import {HtmlTag} from '../modules/functions';
 
 const createHome = () => {
-    let home = new HtmlTag('div', 'container', ['tabcontent'], 'home');
+    let home = new HtmlTag('div', 'container', ['tabcontent', 'showElement'], 'home');
     home.createHtmlElement();
     let ue2 = new HtmlTag('h2', 'home','','','WELCOME')
     ue2.createHtmlElement();
